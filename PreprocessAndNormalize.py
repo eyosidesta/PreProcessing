@@ -18,3 +18,8 @@ def preprocess_images(full_image_path, target_size=(512, 212)):
     # Normalize pixel values to be in the range [0, 1]
     image = image / 255.0
     return image
+
+
+def preprocess_and_normalize_images(image_folder, target_size=(512, 512)):
+    normalized_images = []
+    count = 0
