@@ -57,4 +57,4 @@ def plot_images(images, num_cols=3):
     plt.show()
 
 
-image_folder = "/Users/eyosiasdesta/Desktop/GuardRails/Backend/Normalization/guardImages"
+image_folder = "YourFolder/Normalization/guardImages"
