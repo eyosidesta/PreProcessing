@@ -55,3 +55,6 @@ def plot_images(images, num_cols=3):
     plt.axis('off')
 
     plt.show()
+
+
+image_folder = "/Users/eyosiasdesta/Desktop/GuardRails/Backend/Normalization/guardImages"
