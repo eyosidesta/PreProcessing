@@ -23,3 +23,11 @@ def preprocess_images(full_image_path, target_size=(512, 212)):
 def preprocess_and_normalize_images(image_folder, target_size=(512, 512)):
     normalized_images = []
     count = 0
+
+    # Iterate over all files in the folder
+    for filename in os.listdir(image_folder):
+        count += 1
+        if filename.endswith(('.jpg', '.jpeg', '.png')):  # Ensure the file is an image
+            # Construct the full image path
+            full_image_path = os.path.join(image_folder, filename)
+            print("names: ", full_image_path)
