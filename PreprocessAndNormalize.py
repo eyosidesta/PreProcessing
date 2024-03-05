@@ -22,7 +22,6 @@ def preprocess_images(full_image_path, target_size=(512, 212)):
 
 def preprocess_and_normalize_images(image_folder, target_size=(512, 512)):
     normalized_images = []
-    count = 0
 
     # Iterate over all files in the folder
     for filename in os.listdir(image_folder):
@@ -31,3 +30,10 @@ def preprocess_and_normalize_images(image_folder, target_size=(512, 512)):
             # Construct the full image path
             full_image_path = os.path.join(image_folder, filename)
             print("names: ", full_image_path)
+
+            # Read and preprocess the image
+            image = preprocess_images(full_image_path, target_size)
+
+            # Append the normalized image to the list
+            normalized_images.append(image)
+            # normalized_images.append(full_image_path)
