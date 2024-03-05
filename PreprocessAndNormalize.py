@@ -58,3 +58,5 @@ def plot_images(images, num_cols=3):
 
 
 image_folder = "YourFolder/Normalization/guardImages"
+normalized_images = preprocess_and_normalize_images(image_folder)
+plot_images(normalized_images)
