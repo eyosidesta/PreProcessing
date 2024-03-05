@@ -39,3 +39,19 @@ def preprocess_and_normalize_images(image_folder, target_size=(512, 512)):
             # normalized_images.append(full_image_path)
 
     return normalized_images
+
+
+def plot_images(images, num_cols=3):
+    num_images = len(images)
+    num_rows = (num_images + num_cols - 1) // num_cols
+
+    plt.figure(figsize=(15, 5 * num_rows))
+    i = 0
+
+    # for i in range(num_images):
+    plt.subplot(num_rows, num_cols, i + 1)
+    plt.imshow(images[i])
+    plt.title(f"Image {i + 1}")
+    plt.axis('off')
+
+    plt.show()
