@@ -37,3 +37,5 @@ def preprocess_and_normalize_images(image_folder, target_size=(512, 512)):
             # Append the normalized image to the list
             normalized_images.append(image)
             # normalized_images.append(full_image_path)
+
+    return normalized_images
